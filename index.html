@@ -10,12 +10,14 @@
   <script>
     console.log("d3 version", d3.version); // test that d3 loaded
    const svg = d3.select("#container")
-    .append("svg") .attr("width", 800) .attr("height", 500) .style ("background-color", "white");
+    .append("svg") .attr("width", 800) .attr("height", 500) .style ("background-color", "#081b33");
+
+    
             
     // Add Rectangles
     // Add Circles
     // Add Lines
-    // Add Polygons
+  svg.append("path") .attr("d", "M 200 220 A 80 80 0 0 1 360 220 Z") .attr ("fill", "#c084fc") .attr("stroke", "#e9d5ff") .attr("stroke-width", 3); 
   </script>
 </body>
 </html>
