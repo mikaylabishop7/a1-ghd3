@@ -12,8 +12,8 @@
 const svg = d3.select("#container") .append("svg") .attr("width", 800) .attr("height", 500) .style ("background-color", "#081b33");
 
     //rectangles (plants)
-svg.append("rect") .attr("x", 100) .attr("y", 400) .attr("width", 14) .attr("height", 80)  .attr("fill", "#2dd4bf");
-svg.append("rect") .attr("x", 125) .attr("y", 430) .attr("width", 14) .attr("height", 50)  .attr("fill","#5eead4"); 
+svg.append("rect") .attr("x", 100) .attr("y", 400) .attr("rx", 0) .attr("width", 14) .attr("height", 80)  .attr("fill", "#2dd4bf");
+svg.append("rect") .attr("x", 125) .attr("y", 430) .attr("rx", 0) .attr("width", 14) .attr("height", 50)  .attr("fill","#5eead4"); 
   
     //circles (bubbles)                                                      
 svg.append("circle") .attr("cx", 120) .attr("cy", 280) .attr("r", 12) .attr("fill", "none") .attr("stroke", "#67e8f9") .attr("stroke-width", 2); 
